@@ -7,9 +7,11 @@ function App() {
   const [outres, setOutres] = useState(0);
 
   const fnHandler = (val: string) => {
-    // const result = setOutput(val);
-    const result = eval(num1+ val +num2);
-    if (result) (setOutres(result));
+    if(num1&&num2){
+
+      const result = eval(num1+ val +num2);
+      if (result) (setOutres(result));
+    }
   }
   
   return (

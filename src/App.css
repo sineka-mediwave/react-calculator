@@ -21,11 +21,24 @@ label {
   padding-right: 10px;
 }
 
+input {
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 8px;
+}
+
+input:focus {
+  background-color: #d0e1ff;
+  border: 1px solid #4666a7;
+}
 button {
   padding: 5px 10px;
   margin-right: 10px;
 }
-
+button:hover{
+  background-color: #013fbb;
+  color: #fff
+}
 #result {
   
   padding: 10px;
