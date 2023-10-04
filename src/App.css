@@ -35,11 +35,10 @@ button {
   padding: 5px 10px;
   margin-right: 10px;
 }
-button:hover{
+button:hover {
   background-color: #013fbb;
-  color: #fff
+  color: #fff;
 }
 #result {
-  
   padding: 10px;
 }
