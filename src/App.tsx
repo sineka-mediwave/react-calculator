@@ -7,28 +7,11 @@ function App() {
   const [outres, setOutres] = useState(0);
 
   const fnHandler = (val: string) => {
-    const result = setOutput(val);
+    // const result = setOutput(val);
+    const result = eval(num1+ val +num2);
     if (result) (setOutres(result));
   }
-  function setOutput(val: string) {
-    switch (val) {
-      case '+':
-        return Number(num1) + Number(num2);
-        break;
-      case '-':
-        return Number(num1) - Number(num2);
-        break;
-      case '*':
-        return Number(num1) * Number(num2);
-        break;
-      case '/':
-        return Number(num1) / Number(num2);
-        break;
-      default:
-        return undefined;
-    }
-
-  }
+  
   return (
     <header className="App-header">
       <div className='input-div'>
